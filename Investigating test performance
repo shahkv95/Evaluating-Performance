@@ -1,0 +1,42 @@
+%You can determine how many of the test images the network correctly classified by comparing the predicted classification with the 
+known classification. The known classifications are stored in the Labels property of the datastore.
+
+You can use logical comparison and the nnz function to determine the number of elements of two arrays that match:
+numequal = nnz(a == b)
+
+Calculate the fraction of test images correctly classified
+
+The confusionchart function calculates and displays the confusion matrix for the predicted classifications.
+confusionchart(knownclass,predictedclass)
+The (j,k) element of the confusion matrix is a count of how many images from class j the network predicted to be in class k.
+Hence, diagonal elements represent correct classifications; off-diagonal elements represent misclassifications.
+
+%
+
+This code sets up the Workspace for this activity.
+
+
+
+load pathToImages.mat
+pathToImages
+flwrds = imageDatastore(pathToImages,'IncludeSubfolders',true,'LabelSource','foldernames');
+[trainImgs,testImgs] = splitEachLabel(flwrds,0.98);
+load trainedFlowerNetwork flwrPreds
+
+
+#Extract labels
+
+  flwrActual = testImgs.Labels
+
+#Count correct
+
+  numCorrect = nnz(flwrActual == flwrPreds)
+
+#Calculate fraction correct
+
+  fracCorrect = (numCorrect / numel(flwrPreds))
+
+
+#Display confusion matrix
+
+  confusionchart(testImgs.Labels , flwrPreds)
