@@ -5,9 +5,10 @@ record of the performance of the network on the training data at each iteration.
 
 #
 This code loads the training information of flowernet.
-load pathToImages
-load trainedFlowerNetwork flowernet info
 #
+     load pathToImages
+     load trainedFlowerNetwork flowernet info
+
 
 #
 Plot training loss
