@@ -1,4 +1,4 @@
-%You can determine how many of the test images the network correctly classified by comparing the predicted classification with the 
+% You can determine how many of the test images the network correctly classified by comparing the predicted classification with the 
 known classification. The known classifications are stored in the Labels property of the datastore.
 
 You can use logical comparison and the nnz function to determine the number of elements of two arrays that match:
@@ -13,7 +13,7 @@ Hence, diagonal elements represent correct classifications; off-diagonal element
 
 %
 
-This code sets up the Workspace for this activity.
+#This code sets up the Workspace for this activity.
 
 
 
