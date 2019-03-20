@@ -13,8 +13,7 @@ Hence, diagonal elements represent correct classifications; off-diagonal element
 
 %
 
-#This code sets up the Workspace for this activity.
-
+# This code sets up the Workspace for this activity.
 
 
 load pathToImages.mat
@@ -40,3 +39,4 @@ load trainedFlowerNetwork flwrPreds
 #Display confusion matrix
 
   confusionchart(testImgs.Labels , flwrPreds)
+
