@@ -3,7 +3,6 @@ The variable info is a structure containing information on the training. The fie
 record of the performance of the network on the training data at each iteration.
 #
 
-
 #
 This code loads the training information of flowernet.
 load pathToImages
