@@ -9,7 +9,6 @@ This code loads the training information of flowernet.
      load pathToImages
      load trainedFlowerNetwork flowernet info
 
-
 #
 Plot training loss
 #
