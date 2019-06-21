@@ -6,7 +6,6 @@ numequal = nnz(a == b)
 
 Calculate the fraction of test images correctly classified
 
-
 The confusionchart function calculates and displays the confusion matrix for the predicted classifications.
 confusionchart(knownclass,predictedclass)
 The (j,k) element of the confusion matrix is a count of how many images from class j the network predicted to be in class k.
