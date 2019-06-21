@@ -25,3 +25,4 @@ This code creates a datastore of the flower images.
 The network appears to be performing well on the training data, but the real test is how well it performs on the test data.
 #
     flwrPreds = classify(flowernet,testImgs)
+    
