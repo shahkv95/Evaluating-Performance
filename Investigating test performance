@@ -15,7 +15,6 @@ Hence, diagonal elements represent correct classifications; off-diagonal element
 
 # This code sets up the Workspace for this activity.
 
-
 load pathToImages.mat
 pathToImages
 flwrds = imageDatastore(pathToImages,'IncludeSubfolders',true,'LabelSource','foldernames');
